@@ -34,10 +34,8 @@ We have to use Bot for Inline Search & Userbot for Searching in Channels. So bot
 # Credits
 
 - Special Thanks to Original Developer @Royalkrrishna.
-- And Thanks to GreyMattersBot for convincing Royalkrrishna to make Repo Public.
+- And Thanks to Aks for convincing Royalkrrishna to make Repo Public.
 
 # Subscribe 
 
-1) https://youtube.com/@greymattersyt
-
-2) https://youtube.com/@GreyMattersBot
+1) https://youtube.com/@noharaadda
