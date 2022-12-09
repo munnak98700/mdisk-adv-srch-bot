@@ -1,3 +1,7 @@
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Imdb_updates+MOVIE+SEARCH+BOT+!;CREATED+BY+Aks+TEAM!;A+ADVANCE+BOT+WITH+COOL+FEATURES!)
+</p>
+
+
 # Message Search Bot
 
 We have to use Bot for Inline Search & Userbot for Searching in Channels. So both Bot & Userbot will work together.
