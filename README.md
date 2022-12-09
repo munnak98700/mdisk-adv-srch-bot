@@ -2,6 +2,25 @@
 </p>
 
 
+## Features
+
+- [x] Auto Filter
+- [x] Manual Filter
+- [x] Unlimited Fonts Design
+- [x] IMDB
+- [x] Admin Commands
+- [x] Group Broadcast & Pin
+- [x] Users Broadcast
+- [x] Index
+- [x] IMDB search
+- [x] PM Search
+- [x] Random pics
+- [x] ids and User info 
+- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
+- [x] Spelling Check Feature
+- [x] Custom File Caption
+
+
 # Message Search Bot
 
 We have to use Bot for Inline Search & Userbot for Searching in Channels. So both Bot & Userbot will work together.
