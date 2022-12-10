@@ -1,5 +1,5 @@
 
-# (c) @RoyalKrrishna
+# (c) @Imdb_updates
 from TeamTeleRoid.database import db
 from configs import Config
 from pyrogram import Client, filters
@@ -16,10 +16,10 @@ async def connnect_group(c: Client, m: Message):
         group_id=m.command[1]
 
         if await db.get_group(group_id):
-            return await m.reply('Group Already Connected')
+            return await m.reply('ɢʀᴏᴜᴘ ᴀʟʀᴇᴀᴅʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ')
         else:
             await db.connect(group_id=group_id)
-            return await m.reply('Group connected successfully')
+            return await m.reply('ɢʀᴏᴜᴘ ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssꜰᴜʟʟʏ')
 
 
 
