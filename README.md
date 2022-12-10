@@ -3,7 +3,7 @@
   <img src="https://graph.org/file/83290d27726faa2fb3214.jpg" alt="LINK BOT LOGO">
 </p>
 <h1 align="center">
-  <b> LINK BOT </b>
+  <b> LINK SEARCH </b>
 </h1>
 
 ## Features
