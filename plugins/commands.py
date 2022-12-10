@@ -10,12 +10,12 @@ async def help_handler(_, event: Message):
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
             [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
 
-             [InlineKeyboardButton("About", callback_data="About_msg"),
-             InlineKeyboardButton("movie link", "url=https://t.me/Aksbackup"),
-             InlineKeyboardButton("Help", callback_data="Help_msg")
+             [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Aksbackup"),
+             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
+             InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
              ]
         ])
     )                        
@@ -35,12 +35,12 @@ async def start_handler(_,event: Message):
         caption=Config.START_MSG.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
             [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
 
-             [InlineKeyboardButton("About", callback_data="About_msg"),
-             InlineKeyboardButton("movie link", "url=https://t.me/Aksbackup"),
-             InlineKeyboardButton("Help", callback_data="Help_msg")
+             [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Aksbackup"),
+             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
+             InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
              ]
         ])
     )
@@ -70,15 +70,15 @@ async def request_handler(c,m: Message):
     if not group_info["has_access"] or not await db.is_group_verified(group_id):
         REPLY_MARKUP = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton('Request Access', callback_data=f'request_access#{m.chat.id}#{m.from_user.id}'),
+                InlineKeyboardButton('ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇss', callback_data=f'request_access#{m.chat.id}#{m.from_user.id}'),
             ],
 
         ])
 
-        return await m.reply_text(f"Your group may not have access to add your own DB Channel or may have expired. Please request access to the admin" ,reply_markup=REPLY_MARKUP ,disable_web_page_preview=True)
+        return await m.reply_text(f"ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴍᴀʏ ɴᴏᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇss ᴛᴏ ᴀᴅᴅ ʏᴏᴜʀ ᴏᴡɴ ᴅʙ ᴄʜᴀɴɴᴇʟ ᴏʀ ᴍᴀʏ ʜᴀᴠᴇ ᴇxᴘɪʀᴇᴅ. ᴘʟᴇᴀsᴇ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇss ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴ" ,reply_markup=REPLY_MARKUP ,disable_web_page_preview=True)
 
     else:
-        return await m.reply_text("Your group already have access to /addb")
+        return await m.reply_text("ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀʟʀᴇᴀᴅʏ ʜᴀᴠᴇ ᴀᴄᴄᴇss ᴛᴏ /addb")
 
 
 @Client.on_message(filters.command("addb") & filters.group)
@@ -115,12 +115,12 @@ async def addb_handler(c, m: Message):
 
             REPLY_MARKUP = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton('Allow DB Channel', callback_data=f'dbgive_access#{group_id}#{m.from_user.id}#{db_channel}'),
-            InlineKeyboardButton('Deny', callback_data=f'dbdeny_access#{m.from_user.id}#{db_channel}'),
+            InlineKeyboardButton('ᴀʟʟᴏᴡ ᴅʙ ᴄʜᴀɴɴᴇʟ', callback_data=f'dbgive_access#{group_id}#{m.from_user.id}#{db_channel}'),
+            InlineKeyboardButton('ᴅᴇɴʏ', callback_data=f'dbdeny_access#{m.from_user.id}#{db_channel}'),
         ],
         [
             
-            InlineKeyboardButton('Close', callback_data=f'delete'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data=f'delete'),
         ],
 
     ])      
@@ -128,6 +128,6 @@ async def addb_handler(c, m: Message):
             await c.send_message(Config.LOG_CHANNEL,  f"Join the channel and then alllow. \n\n#NewDBChannel\n\nDB Chnl Invite Link: {invite_link.invite_link}\nGroup:`{group_id}`\n\nNote: This group has been already has access", reply_markup=REPLY_MARKUP)
             return await m.reply_text("DB Channel added successfully. Wait for the admin to approve the channel. You will be notified", )
         else:
-            return await m.reply_text("Make the bot admin in the channel and /addb -100xxx")
+            return await m.reply_text("ᴍᴀᴋᴇ ᴛʜᴇ ʙᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ /addb -100xxx")
     else:
-        return await m.reply_text("Your group does not have access to this command. Please /request access")
+        return await m.reply_text("ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴅᴏᴇs ɴᴏᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇss ᴛᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ. ᴘʟᴇᴀsᴇ /request ᴀᴄᴄᴇss")
