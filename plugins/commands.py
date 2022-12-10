@@ -125,8 +125,8 @@ async def addb_handler(c, m: Message):
 
     ])      
 
-            await c.send_message(Config.LOG_CHANNEL,  f"Join the channel and then alllow. \n\n#NewDBChannel\n\nDB Chnl Invite Link: {invite_link.invite_link}\nGroup:`{group_id}`\n\nNote: This group has been already has access", reply_markup=REPLY_MARKUP)
-            return await m.reply_text("DB Channel added successfully. Wait for the admin to approve the channel. You will be notified", )
+            await c.send_message(Config.LOG_CHANNEL,  f"ᴊᴏɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴛʜᴇɴ ᴀʟʟʟᴏᴡ. \n\n#NewDBChannel\n\nDB Chnl Invite Link: {invite_link.invite_link}\nGroup:`{group_id}`\n\nNote: ᴛʜɪs ɢʀᴏᴜᴘ ʜᴀs ʙᴇᴇɴ ᴀʟʀᴇᴀᴅʏ ʜᴀs ᴀᴄᴄᴇss", reply_markup=REPLY_MARKUP)
+            return await m.reply_text("ᴅʙ ᴄʜᴀɴɴᴇʟ ᴀᴅᴅᴇᴅ sᴜᴄᴄᴇssꜰᴜʟʟʏ. ᴡᴀɪᴛ ꜰᴏʀ ᴛʜᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴀᴘᴘʀᴏᴠᴇ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ. ʏᴏᴜ ᴡɪʟʟ ʙᴇ ɴᴏᴛɪꜰɪᴇᴅ", )
         else:
             return await m.reply_text("ᴍᴀᴋᴇ ᴛʜᴇ ʙᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ /addb -100xxx")
     else:
