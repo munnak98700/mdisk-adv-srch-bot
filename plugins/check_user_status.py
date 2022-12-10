@@ -1,4 +1,4 @@
-# (c) @Royalkrrishna
+# (c) @Imdb_updates
 from pyrogram import Client, filters
 import datetime
 from configs import Config
@@ -24,6 +24,6 @@ async def handle_user_status(bot:Client, cmd:Message):
         ).days > ban_status["ban_duration"]:
             await db.remove_ban(chat_id)
         else:
-            await cmd.reply_text("You Are Ban To Use This Bot.😜", quote=True)
+            await cmd.reply_text("ʏᴏᴜ ᴀʀᴇ ʙᴀɴ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 😐", quote=True)
             return
     await cmd.continue_propagation()
