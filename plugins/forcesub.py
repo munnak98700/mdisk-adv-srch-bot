@@ -14,18 +14,18 @@ async def forcesub(c:Client, m:Message):
         try:
             user = await c.get_chat_member(Config.UPDATES_CHANNEL_USERNAME, m.from_user.id)
             if user.status == "kicked":
-               await m.reply_text("**Hey you are banned 😜**", quote=True)
+               await m.reply_text("**ʜᴇʏ ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ 😐**", quote=True)
                return
         except UserNotParticipant:
-            buttons = [[InlineKeyboardButton(text='Updates Channel 🔖', url=f"https://t.me/{Config.UPDATES_CHANNEL_USERNAME}")]]
+            buttons = [[InlineKeyboardButton(text='☘ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ☘', url=f"https://t.me/{Config.UPDATES_CHANNEL_USERNAME}")]]
             if m.text:
                 if (len(m.text.split()) > 1) & ('start' in m.text):
                     decoded_data = await decode(m.text.split()[1])
                     chat_id, msg_id = decoded_data.split('_')
                     buttons.append([InlineKeyboardButton('🔄 Refresh', callback_data=f'refresh+{chat_id}+{msg_id}')])
             await m.reply_text(
-                f"Hey {m.from_user.mention(style='md')} you need join My updates channel in order to use me 😉\n\n"
-                "__Press the Following Button to join Now 👇__",
+                f"ʜᴇʏ {m.from_user.mention(style='md')} ʏᴏᴜ ɴᴇᴇᴅ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ɪɴ ᴏʀᴅᴇʀ ᴛᴏ ᴜsᴇ ᴍᴇ 😉\n\n"
+                "__ᴘʀᴇss ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴊᴏɪɴ ɴᴏᴡ 👇__",
                 reply_markup=InlineKeyboardMarkup(buttons),
                 quote=True
             )
@@ -33,7 +33,7 @@ async def forcesub(c:Client, m:Message):
             return
         except Exception as e:
             print(e)
-            await m.reply_text(f"Something Wrong. Please try again later or contact {owner.mention(style='md')}", quote=True)
+            await m.reply_text(f"sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ. ᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ {owner.mention(style='md')}", quote=True)
             return
 
     await m.continue_propagation()
@@ -55,11 +55,11 @@ async def refresh_cb(c, m):
                    pass
                return
         except UserNotParticipant:
-            await m.answer('You are not yet joined our channel. First join and then press refresh button 🤤', show_alert=True)
+            await m.answer('ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʏᴇᴛ ᴊᴏɪɴᴇᴅ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ. ꜰɪʀsᴛ ᴊᴏɪɴ ᴀɴᴅ ᴛʜᴇɴ ᴘʀᴇss ʀᴇꜰʀᴇsʜ ʙᴜᴛᴛᴏɴ 🤤', show_alert=True)
             return
         except Exception as e:
             print(e)
-            await m.message.edit(f"Something Wrong. Please try again later or contact {owner.mention(style='md')}")
+            await m.message.edit(f"sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ. ᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ {owner.mention(style='md')}")
             return        
     await m.message.delete()
 
