@@ -95,10 +95,6 @@ async def button(bot, cmd: CallbackQuery):
             text=Config.ABOUT_BOT_TEXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ],
                     [
                         InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome"),
                         InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
