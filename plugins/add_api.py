@@ -1,5 +1,5 @@
 
-# (c) @RoyalKrrishna
+# (c) @Imdb_updates
 from TeamTeleRoid.database import db
 from configs import Config
 from pyrogram import Client, filters, idle
