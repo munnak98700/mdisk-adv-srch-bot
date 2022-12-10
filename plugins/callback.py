@@ -134,6 +134,7 @@ async def button(bot, cmd: CallbackQuery):
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
                     [
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Aksbackup"),
                         InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
                         InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
                     ]
