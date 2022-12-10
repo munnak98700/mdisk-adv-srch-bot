@@ -97,11 +97,12 @@ async def button(bot, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
                     [
-                        InlineKeyboardButton("Home", callback_data="gohome"),
-                        InlineKeyboardButton("Help", callback_data="Help_msg")
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates"),
+                        InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome"),
+                        InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
                     ]
                 ]
             ),
@@ -114,11 +115,12 @@ async def button(bot, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ], 
-                                        [
-                        InlineKeyboardButton("About", callback_data="About_msg"),
-                        InlineKeyboardButton("Home", callback_data="gohome")
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
+            ],
+                    [
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates"),
+                        InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome"),
+                        InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
                     ]
                 ]
             ),
@@ -130,12 +132,13 @@ async def button(bot, cmd: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                                       [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
+                    [
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
                     [
-                        InlineKeyboardButton("About", callback_data="About_msg"),
-                        InlineKeyboardButton("Help", callback_data="Help_msg")
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates"),
+                        InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome"),
+                        InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
                     ]
                 ]
             ),
