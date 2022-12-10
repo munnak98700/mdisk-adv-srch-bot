@@ -45,11 +45,11 @@ async def message_handler(event):
 
         # Force Subscription
         if  not await get_user_join(event.sender_id):
-            haha = await event.reply(f'''**Hey! {event.sender.first_name} 😃**
+            haha = await event.reply(f'''**ʜᴇʏ :) {event.sender.first_name} 🥰**
 
-**You Have To Join Our Update Channel To Use Me ✅**
+** ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ ⁉️**
 
-**Click Bellow Button To Join Now.👇🏻**''', buttons=Button.url('🍿Updates Channel🍿', f'https://t.me/{Config.UPDATES_CHANNEL_USERNAME}'))
+**Click Bellow Button To Join Now.👇🏻**''', buttons=Button.url('❇️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ❇️', f'https://t.me/{Config.UPDATES_CHANNEL_USERNAME}'))
             await asyncio.sleep(Config.AUTO_DELETE_TIME)
             return await haha.delete()
 
@@ -62,7 +62,7 @@ async def message_handler(event):
         if not args:
             return
 
-        txt = await event.reply('**Searching For "{}" 🔍**'.format(event.text))
+        txt = await event.reply('** sᴇᴀʀᴄʜɪɴɢ ꜰᴏʀ "{}" 🔍**'.format(event.text))
 
 
 
@@ -132,7 +132,7 @@ async def message_handler(event):
             title=event.text,
             author=Config.BOT_USERNAME
         )
-        message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
+        message = f'**ᴄʟɪᴄᴋ ʜᴇʀᴇ 👇🏻 ꜰᴏʀ "{event.text}"**\n\n[♻️📽️ {str(event.text).upper()}\n📝🔎 {str("ᴄʟɪᴄᴋ ᴍᴇ ꜰᴏʀ ʀᴇsᴜʟᴛs").upper()}]({tgraph_result})'
 
         await txt.delete()
         result = await event.reply(message, link_preview=False)
