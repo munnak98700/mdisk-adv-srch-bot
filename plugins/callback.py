@@ -68,12 +68,12 @@ async def request_access_handler(c:Client,query: CallbackQuery):
     else: 
         REPLY_MARKUP = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton('Allow', callback_data=f'give_access#{query.message.chat.id}#{query.from_user.id}'),
-                InlineKeyboardButton('Deny', callback_data=f'deny_access#{query.message.chat.id}#{query.from_user.id}'),
+                InlineKeyboardButton('ᴀʟʟᴏᴡ', callback_data=f'give_access#{query.message.chat.id}#{query.from_user.id}'),
+                InlineKeyboardButton('ᴅᴇɴʏ', callback_data=f'deny_access#{query.message.chat.id}#{query.from_user.id}'),
             ],
             [
                 
-                InlineKeyboardButton('Close', callback_data=f'delete'),
+                InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data=f'delete'),
             ],
 
         ])      
@@ -100,7 +100,6 @@ async def button(bot, cmd: CallbackQuery):
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
                     [
-                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates"),
                         InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome"),
                         InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
                     ]
@@ -116,11 +115,10 @@ async def button(bot, cmd: CallbackQuery):
                 [
                     [
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ],
-                    [
-                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates"),
-                        InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome"),
-                        InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
+            ], 
+                                        [
+                        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
+                        InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome")
                     ]
                 ]
             ),
@@ -132,12 +130,11 @@ async def button(bot, cmd: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [
+                                       [
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
                     [
-                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Imdb_updates"),
-                        InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome"),
+                        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
                         InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
                     ]
                 ]
