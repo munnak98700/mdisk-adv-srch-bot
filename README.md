@@ -14,8 +14,6 @@
 - [x] Users Broadcast
 - [x] Add Your Own Api Id
 - [x] PM Search
-- [x] Random pics
-- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
 
 
 # Message Search Bot
