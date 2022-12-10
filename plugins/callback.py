@@ -137,7 +137,7 @@ async def button(bot, cmd: CallbackQuery):
                         InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Aksbackup"),
                         InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
                         InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
-                    ]
+                    ],[InlineKeyboardButton("sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ", url='https://youtube.com/@noharaadda')]
                 ]
             ),
             parse_mode="html"
