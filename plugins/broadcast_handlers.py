@@ -1,4 +1,4 @@
-# (c) @RoyalKrrishna
+# (c) @Imdb_updates
 import time
 import string
 import random
