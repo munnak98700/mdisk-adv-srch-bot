@@ -14,6 +14,7 @@ async def help_handler(_, event: Message):
             ],
 
              [InlineKeyboardButton("About", callback_data="About_msg"),
+             InlineKeyboardButton("movie link", "url=https://t.me/Aksbackup"),
              InlineKeyboardButton("Help", callback_data="Help_msg")
              ]
         ])
@@ -38,6 +39,7 @@ async def start_handler(_,event: Message):
             ],
 
              [InlineKeyboardButton("About", callback_data="About_msg"),
+             InlineKeyboardButton("movie link", "url=https://t.me/Aksbackup"),
              InlineKeyboardButton("Help", callback_data="Help_msg")
              ]
         ])
