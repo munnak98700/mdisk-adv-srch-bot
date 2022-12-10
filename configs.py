@@ -1,4 +1,4 @@
-# (c) @RoyalKrrishna
+# (c) @Aks
 
 import os
 # from dotenv import load_dotenv
@@ -22,7 +22,7 @@ class Config(object):
 
 ɪ'ᴍ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴏᴠɪᴇ ʟɪɴᴋ sᴇɴᴅɪɴɢ ʙᴏᴛ... ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ...
 ɪᴛs ᴇᴀsʏ ᴛᴏ ᴜsᴇ ᴍᴇ: ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ, ᴛʜᴀᴛ's ᴀʟʟ, ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴛʜᴇʀᴇ... :)''')
-    START_PHOTO = os.getenv("START_PHOTO", "https://telegra.ph/file/3073c7543fc3ab93659d9.jpg")
+    START_PHOTO = os.getenv("START_PHOTO", "https://graph.org/file/83290d27726faa2fb3214.jpg")
     HOME_TEXT = os.getenv("HOME_TEXT", '''ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕
 
 ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇʀᴇ ʏᴏᴜʀ ʟɪɴᴋꜱ,
