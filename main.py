@@ -110,9 +110,9 @@ async def message_handler(event):
 **Check Spelling On** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie) 🔍
     '''
 
-            newbutton = [Button.url('Click To Check Spelling ✅',
+            newbutton = [Button.url('✏️ ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ✏️',
                                     f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie')], [
-                            Button.url('Click To Check Release Date 📅',
+                            Button.url('📅 ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ 📅',
                                     f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie%20Release%20Date')]
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
