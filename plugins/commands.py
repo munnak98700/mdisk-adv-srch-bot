@@ -16,7 +16,9 @@ async def help_handler(_, event: Message):
              [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Aksbackup"),
              InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
              InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
-             ]
+             ],[
+             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
+             
         ])
     )                        
 
@@ -41,7 +43,9 @@ async def start_handler(_,event: Message):
              [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Aksbackup"),
              InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
              InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
-             ]
+             ],[
+             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
+             
         ])
     )
 
