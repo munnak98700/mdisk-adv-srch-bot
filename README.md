@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Imdb_updates+MOVIE+SEARCH+BOT+!;CREATED+BY+Aks+TEAM!;A+ADVANCE+BOT+WITH+COOL+FEATURES!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=MOVIE+LINK+SEARCH+BOT+!;CREATED+BY+AKS+TEAM!;A+ADVANCE+BOT+WITH+POSTER+INDEX!)
 </p>
 
 
