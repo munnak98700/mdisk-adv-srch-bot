@@ -1,4 +1,4 @@
-# (c) @RoyalKrrishna
+# (c) @Imdb_updates
 
 from os import link
 from telethon import Button
