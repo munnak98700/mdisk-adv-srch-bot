@@ -8,21 +8,14 @@
 
 ## Features
 
-- [x] Auto Filter
-- [x] Manual Filter
-- [x] Unlimited Fonts Design
-- [x] IMDB
-- [x] Admin Commands
-- [x] Group Broadcast & Pin
+- [x] Auto Post Filter
+- [x] With Poster Index
+- [x] Link Search
 - [x] Users Broadcast
-- [x] Index
-- [x] IMDB search
+- [x] Add Your Own Api Id
 - [x] PM Search
 - [x] Random pics
-- [x] ids and User info 
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
-- [x] Spelling Check Feature
-- [x] Custom File Caption
 
 
 # Message Search Bot
