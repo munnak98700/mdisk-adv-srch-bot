@@ -1,6 +1,10 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=MOVIE+LINK+SEARCH+BOT+!;CREATED+BY+AKS+TEAM!;A+ADVANCE+BOT+WITH+POSTER+INDEX!)
 </p>
-
+  <img src="https://graph.org/file/83290d27726faa2fb3214.jpg" alt="LINK BOT LOGO">
+</p>
+<h1 align="center">
+  <b> LINK BOT </b>
+</h1>
 
 ## Features
 
