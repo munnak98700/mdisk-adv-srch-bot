@@ -112,8 +112,8 @@ async def button(bot, cmd: CallbackQuery):
                 [
                     [                                       [                         InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
                         InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome")
-                    ]
                 ]
+                    [
             ),
             parse_mode="html"
         )
