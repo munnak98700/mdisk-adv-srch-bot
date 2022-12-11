@@ -110,10 +110,11 @@ async def button(bot, cmd: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [                                       [                         InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
+                    [   
+                        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="About_msg"),
                         InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome")
                 ]
-                    [
+                    ]
             ),
             parse_mode="html"
         )
