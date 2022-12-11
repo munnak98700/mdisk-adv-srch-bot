@@ -99,7 +99,6 @@ async def button(bot, cmd: CallbackQuery):
                         InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gohome"),
                         InlineKeyboardButton("ʜᴇʟᴘ", callback_data="Help_msg")
                     ]
-                ]
             ),
             parse_mode="html"
         )
