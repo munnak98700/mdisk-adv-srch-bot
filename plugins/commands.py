@@ -24,7 +24,7 @@ async def help_handler(_, event: Message):
 async def total_users(_, event: Message):
     total_users = await db.total_users_count()
     msg = f"""
-    Users: {total_users} users
+    ◇ ᴛᴏᴛᴀʟ ᴜsᴇʀs:- {total_users}
     """
     await event.reply_text(msg)
 
@@ -110,7 +110,7 @@ async def addb_handler(c, m: Message):
             try:
                 invite_link =  await c.create_chat_invite_link(int(db_channel))
             except Exception as e:
-                return await m.reply_text("Make sure you you have made the bot as admin in ur channel "+str(db_channel))
+                return await m.reply_text("ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ ʜᴀᴠᴇ ᴍᴀᴅᴇ ᴛʜᴇ ʙᴏᴛ ᴀs ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ "+str(db_channel))
                 
 
             REPLY_MARKUP = InlineKeyboardMarkup([
