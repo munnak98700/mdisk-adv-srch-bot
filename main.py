@@ -134,8 +134,8 @@ async def message_handler(event):
         )
         message = f'**ᴄʟɪᴄᴋ ʜᴇʀᴇ 👇🏻 ꜰᴏʀ "{event.text}"**\n\n[♻️📽️ {str(event.text).upper()}\n📝🔎 {str("click here for result").upper()}]({tgraph_result})'
 
-        newbutton = [Button.url('How To Watch ❓',
-                                    f'https://t.me/postsearchbot?start=Watch')]
+        newbutton = [Button.url('Join Updates Channel',
+                                    f'https://t.me/Imdb_updates')]
 
         await txt.delete()
         result = await event.reply(message, link_preview=False)
