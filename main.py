@@ -134,15 +134,15 @@ async def message_handler(event):
         )
         message = f'**ᴄʟɪᴄᴋ ʜᴇʀᴇ 👇🏻 ꜰᴏʀ "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
-        newbutton = [Button.url('Join Updates Channel',
+            newbutton = [Button.url('Join Updates Channel',
                                     f'https://t.me/Imdb_updates')], [
                             Button.url('Backup channel',
                                     f'https://t.me/Aksbackup')]
-        await txt.delete()
-        result = await event.reply(message, link_preview=False)
-        await asyncio.sleep(Config.AUTO_DELETE_TIME)
-        # await event.delete()
-        return await result.delete()
+            await txt.delete()
+            result = await event.reply(answer, buttons=newbutton, link_preview=False)
+            await asyncio.sleep(Config.AUTO_DELETE_TIME)
+            await event.delete()
+            return await result.delete()
 
     except Exception as e:
         print(e)
