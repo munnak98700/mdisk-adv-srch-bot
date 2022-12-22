@@ -137,7 +137,7 @@ async def message_handler(event):
         reply_markup=InlineKeyboardMarkup([
             [
             InlineKeyboardButton('join updates channel', url=f'https://t.me/Imdb_updates')
-            ]
+            ]])
 
         await txt.delete()
         result = await event.reply(message, link_preview=False)
