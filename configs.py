@@ -23,10 +23,10 @@ class Config(object):
 ɪ'ᴍ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴏᴠɪᴇ ʟɪɴᴋ sᴇɴᴅɪɴɢ ʙᴏᴛ... ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ...
 ɪᴛs ᴇᴀsʏ ᴛᴏ ᴜsᴇ ᴍᴇ: ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ, ᴛʜᴀᴛ's ᴀʟʟ, ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴛʜᴇʀᴇ... :)''')
     START_PHOTO = os.getenv("START_PHOTO", "https://graph.org/file/83290d27726faa2fb3214.jpg")
-    HOME_TEXT = os.getenv("HOME_TEXT", '''ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕
+    HOME_TEXT = os.getenv("HOME_TEXT", '''ʜᴇʏ 👋 
 
-ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇʀᴇ ʏᴏᴜʀ ʟɪɴᴋꜱ,
-ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏ ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ✅''')
+ɪ'ᴍ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴏᴠɪᴇ ʟɪɴᴋ sᴇɴᴅɪɴɢ ʙᴏᴛ... ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ...
+ɪᴛs ᴇᴀsʏ ᴛᴏ ᴜsᴇ ᴍᴇ: ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ, ᴛʜᴀᴛ's ᴀʟʟ, ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴛʜᴇʀᴇ... :)''')
     UPDATES_CHANNEL = os.getenv("UPDATES_CHANNEL", None)
     DATABASE_URL = os.getenv("DATABASE_URL", "")
     LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", ""))
