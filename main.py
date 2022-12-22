@@ -134,6 +134,8 @@ async def message_handler(event):
         )
         message = f'**ᴄʟɪᴄᴋ ʜᴇʀᴇ 👇🏻 ꜰᴏʀ "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
+        InlineKeyboardButton('Join Updates Channel', url='https://t.me/Imdb_updates')
+
         await txt.delete()
         result = await event.reply(message, link_preview=False)
         await asyncio.sleep(Config.AUTO_DELETE_TIME)
