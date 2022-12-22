@@ -132,7 +132,7 @@ async def message_handler(event):
             title=event.text,
             author=Config.BOT_USERNAME
         )
-        message = f'**ᴄʟɪᴄᴋ ʜᴇʀᴇ 👇🏻 ꜰᴏʀ "{event.text}"**\n\n[♻️📽️ {str(event.text).upper()}\n📝🔎 {str("click here for result").upper()}]({tgraph_result})', buttons=Button.url('Join Updates Channel', 'https://t.me/Imdb_updates')]
+        message = (f'**ᴄʟɪᴄᴋ ʜᴇʀᴇ 👇🏻 ꜰᴏʀ "{event.text}"**\n\n[♻️📽️ {str(event.text).upper()}\n📝🔎 {str("click here for result").upper()}]({tgraph_result})', buttons=Button.url('Join Updates Channel', 'https://t.me/Imdb_updates'))
 
         await txt.delete()
         result = await event.reply(message, link_preview=False)
