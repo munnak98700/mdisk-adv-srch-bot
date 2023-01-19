@@ -7,15 +7,15 @@ import os
 
 
 class Config(object):
-    API_ID = int(os.getenv("API_ID", 12345))
-    API_HASH = os.getenv("API_HASH", "")
-    BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+    API_ID = int(os.getenv("API_ID", 1357592))
+    API_HASH = os.getenv("API_HASH", "7a0b3567c813916acafaa69bf8989f12")
+    BOT_TOKEN = os.getenv("BOT_TOKEN", "5929285806:AAFRF7HkTN_jVr0UALCwgNPTIcsbXP977r4")
     BOT_SESSION_NAME = os.getenv("BOT_SESSION_NAME", "MdiskSearchRobot")
     USER_SESSION_STRING = os.getenv("USER_SESSION_STRING", "")
     CHANNEL_ID = int(os.getenv("CHANNEL_ID", -100))
-    BOT_USERNAME = os.getenv("BOT_USERNAME")
-    BOT_OWNER = int(os.getenv("BOT_OWNER"))
-#    OWNER_USERNAME = os.getenv("OWNER_USERNAME")
+    BOT_USERNAME = os.getenv("BOT_USERNAME" "SunnyMdisk_bot")
+    BOT_OWNER = int(os.getenv("BOT_OWNER" "-1005773749356" ))
+#    OWNER_USERNAME = os.getenv("OWNER_USERNAME" "@SunnyRaajput")
     BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL")
 #    GROUP_USERNAME = os.getenv("GROUP_USERNAME")
     START_MSG = os.getenv("START_MSG", '''ʜᴇʏ 👋 
